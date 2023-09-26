@@ -1,0 +1,28 @@
+<!-- Interpolation (One-Way Binding) -->
+<h1>{{ pageTitle }}</h1>
+<p>{{ message }}</p>
+
+
+
+<!-- Property Binding (One-Way Binding) -->
+<img [src]="imageUrl" alt="Angular Logo">
+<button [disabled]="isDisabled">Click Me</button>
+
+
+
+<!-- Event Binding (One-Way Binding) -->
+<button (click)="showMessage()">Show Message</button>
+
+
+
+
+<!-- Two-Way Binding (ngModel) -->
+<input [(ngModel)]="name" placeholder="Enter your name">
+<p>Your name is: {{ name }}</p>
+
+
+
+
+<!-- Property Binding with ngClass and ngStyle -->
+<div [ngClass]="{ 'highlight': isHighlighted, 'italic': isItalic }">Styled Text</div>
+<div [ngStyle]="{ 'color': textColor, 'font-size': fontSize + 'px' }">Styled Text</div>
